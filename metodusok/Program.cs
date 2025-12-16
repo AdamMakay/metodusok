@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            //szabi           
             List<string> list = new List<string>();
             String szoveg = "Haromszog";
             Udvozol(szoveg);
@@ -40,28 +41,33 @@
                     break;
             }
         }
+        //szabi
         static void Udvozol(String szoveg)
         {
             int Con_width = Console.WindowWidth;
             Console.SetCursorPosition((Con_width - szoveg.Length) / 2, 0);
             Console.WriteLine(szoveg);
         }
-
+        //szabi
         static void Menu(List<string> lista)
         {
             Console.WriteLine("[1]" + lista[0]);
             Console.WriteLine("[2]" + lista[1]);
             Console.WriteLine("[3]" + lista[2]);
         }
+
+        //Adam
         static int Kivalasztott(int szam)
         {
             int valaszt = Convert.ToInt32(Console.ReadLine());
             return valaszt;
         }
+        //Adam
         static void Kerulet(int a, int b, int c)
         {
            Console.WriteLine(a+b+c);
         }
+        //Adam
         static void Terulet(int a, int b)
         {
             Console.WriteLine(Convert.ToDouble(a*b/2));
